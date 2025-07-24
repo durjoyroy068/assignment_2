@@ -1,0 +1,54 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    main {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
