@@ -295,6 +295,59 @@ main > section {
     color: #fff;
 }
 
+
+/* join style  */
+
+/* Simple style for join section */
+.join {
+  background: url('assets/news-letter-bg.png') center/cover no-repeat;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 130px;
+}
+.join-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+.join-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 3rem;
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.join-form {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.join-form input[type="email"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.join-form button {
+  padding: 0 24px;
+  background: #e95a08;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
  
 /* Responsive web-site style */
 
@@ -323,7 +376,6 @@ main > section {
 
     .flower-section {
         flex-direction: column-reverse;
-        /* margin-top: 60px; */
     }
     .flower-title{
         font-size: 1.5rem;
@@ -356,6 +408,15 @@ main > section {
             "card-2"
             "card-3";
         grid-template-columns:repeat(1, 1fr);
+    }
+    .join-title{
+        font-size: 1.5rem;
+    }
+    .join-form{
+        max-width: 300px;    
+    }
+    .join-form button{
+        padding: 0 12px;
     }
 
 }
