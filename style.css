@@ -130,6 +130,7 @@ body {
   font-size: 1.25rem;
   font-weight: 400;
   color: rgba(137, 135, 161, 1);
+  margin-top: 15px;
 }
 
 .card-title {
@@ -419,8 +420,11 @@ body {
   .flower-section {
     flex-direction: column-reverse;
   }
-  .flower-title {
-    font-size: 1.5rem;
+  .flower-title,.our-plant-title ,.flower-lover-title ,.latest-title{
+    font-size: 1.8rem;
+  }
+  .flower-subtitle,.plant-ds ,.flower-list,.latest-ds{
+    font-size: 0.9rem;
   }
   .plant-card-info {
     grid-template-columns: repeat(2, 1fr);
