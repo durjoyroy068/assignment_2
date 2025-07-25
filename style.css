@@ -8,6 +8,11 @@
 }
 
 /* shard style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .display-flex {
   display: flex;
 }
@@ -23,6 +28,7 @@ body {
 .navbar {
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
 }
 .nav-links {
   list-style: none;
@@ -377,6 +383,13 @@ main > section {
 /* Responsive web-site style */
 
 @media screen and (max-width: 576px) {
+    header{
+        padding: 15px;
+    }
+    main{
+        padding: 15px;
+    }
+
   .navbar {
     margin: 0 8px;
   }
@@ -448,12 +461,23 @@ main > section {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     justify-items: start;
+    padding: 15px;
   }
   .footer-item {
     grid-template-columns: repeat(1, 1fr);
     text-align: left;
+    padding: 0;
+    margin-left: 0;
+    /* margin-right: 12px; */
   }
-  .footer-logo{
-    padding: 40px;
+  .footer-ds,
+  .footer-item a {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .social-links img {
+    margin-left: 0;
+    margin-top: 15px;
+    margin-right: 15px;
   }
 }
